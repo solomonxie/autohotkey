@@ -28,11 +28,7 @@ ScrollLock::MultiTask()
 ; --- 快捷启动 ---
 F1::  RunOrAct("ahk_exe chrome.exe", "Chrome")
 ; F3::  RunOrAct("ahk_exe WINWORD.EXE", "Word")
-<<<<<<< HEAD
-F4::  Run % Sites("Sublime") ;RunOrAct("ahk_class PX_WINDOW_CLASS", "Sublime")
-=======
 F4::  Run % Sites("Subl") ;RunOrAct("ahk_class PX_WINDOW_CLASS", "Sublime")
->>>>>>> 8b89f0bff70abecb288bdfba81f0c11aa5ec6626
 ; F9::  RunOrAct("ahk_exe filezilla.exe", "FTP")
 F10::  RunOrAct("ahk_exe filezilla.exe", "FTP")
 ; !F2:: RunOrAct("ahk_class CabinetWClass", "fo:down")
