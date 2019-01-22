@@ -73,7 +73,7 @@ Orientation(){
 
 Snippet(){
 	;(代码糖，用来在Ctrl+R快速跳转)
-} 
+}
 ; -- 个人信息Snippet快捷键 (Chrome Only) -->
 ::@sol::solomonxie@foxmail.com
 
@@ -83,7 +83,7 @@ MultiTask(){
 	if (fullcommand = "")
 		Return
 	; -- 解析命令行 ---
-	split  := " " 
+	split  := " "
 	StringGetPos , posi, fullCommand, %split%
 	if (posi > 0) {
 		StringMid, eg, fullCommand, 0 , posi ;
@@ -123,7 +123,7 @@ MultiTask(){
 	}
 	else if (eg="Bible" or eg="BT" or eg="Video" or eg="cnCourse" or eg="enCourse" or eg="IT" or eg="ips" or eg="getvideo" or eg="wp" or eg="itBlog") {
 		resu := Sites("", key, eg)
-		loop % resu.MaxIndex() 
+		loop % resu.MaxIndex()
 			Run % resu[A_Index]
 	}
 	else if (eg="Down:Youtube") {
@@ -320,11 +320,11 @@ Sites(eg="", key="", gp="") {
 	; --代理服务器--
 	engines.insert(["myip", "http://ip.cn/"]) ;查询本机的公网IP
 	engines.insert(["duotai", "https://duotai.org/login"]) ;多态网ZPN（全平台提供PAC自动配置代理的脚本）
-	engines.insert(["kjson", "https://www.kjson.com/proxy/", "ips"]) 
-	engines.insert(["ip1", "http://proxy.ipcn.org/proxylist.html", "ips"]) 
-	engines.insert(["ip2", "http://proxy.goubanjia.com/free/", "ips"]) 
+	engines.insert(["kjson", "https://www.kjson.com/proxy/", "ips"])
+	engines.insert(["ip1", "http://proxy.ipcn.org/proxylist.html", "ips"])
+	engines.insert(["ip2", "http://proxy.goubanjia.com/free/", "ips"])
 	engines.insert(["ip3", "http://www.kuaidaili.com/", "ips"])
-	engines.insert(["ip4", "http://www.xicidaili.com/", "ips"]) 
+	engines.insert(["ip4", "http://www.xicidaili.com/", "ips"])
 	engines.insert(["ip5", "http://proxylist.hidemyass.com/", "ips"])
 	engines.insert(["ip6", "https://nordvpn.com/free-proxy-list/", "ips"])
 	engines.insert(["ip7", "https://incloak.com/proxy-list/", "ips"])
@@ -431,7 +431,7 @@ Foxit(){
 
 Chrome(){
 	;(代码糖，用来在Ctrl+R快速跳转)
-} 
+}
 ; === Chrome浏览器 ===
 #IfWinActive, ahk_exe chrome.exe
 {
@@ -450,7 +450,7 @@ QQPlayer(){
 ; === QQ影音播放器 ===
 #IfWinActive, ahk_exe QQPlayer.exe
 {
-	; 
+	;
 	Return
 }
 
